@@ -1,0 +1,72 @@
+.mobile-footer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.desktop-footer {
+  display: none;
+}
+
+.facebook {
+  margin-right: 25px;
+  color: white;
+}
+
+.insta {
+  margin-right: 18px;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons i {
+  font-size: 35px;
+}
+
+.social-icons a {
+  color: white;
+}
+
+.social-icons a:hover {
+  color: grey;
+}
+
+.address a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.email-2 {
+  font-size: 25px;
+}
+
+.web-dev {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.web-dev a {
+  color: white;
+  font-size: 25px;
+}
+.web-dev img {
+  height: 50px;
+}
+
+.copyright p {
+  font-size: 15px;
+}
+
+.footer-divider {
+  background-color: #FF9702;
+  height: 2px;
+  width: 150px;
+}
+

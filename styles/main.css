@@ -1,0 +1,294 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: Arial;
+  font-weight: 500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.privacy-policy-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#orange-text {
+  color: #FF9702;
+}
+
+.vertical-line {
+  display: none;
+}
+
+.carousel-indicators{
+  display: none;
+}
+
+.mobile-video {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #FF9702;
+}
+
+.mobile-video h4 {
+  margin: 0 auto;
+  font-size: 24px;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.mobile-top-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.banner {
+  display: none;
+}
+
+.services {
+  width: 100%;
+  color: #FF9702;
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#center-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#center-services p {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.desktop-circles {
+  display: none;
+}
+
+.mobile-circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0px;
+}
+
+.icon-group {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon-group-item {
+  text-align: center;
+}
+
+.icon-group h2 {
+  font-size: 24px;
+}
+.icon-group i {
+  text-align: center;
+  font-size: 36px;
+  color: #FF9702;
+}
+.icon-group p {
+  margin: 0;
+}
+
+
+.numberCircle {
+  width: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  border: 4px solid black;
+}
+
+.numberCirclealt {
+  width: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  border: 4px solid rgba(230, 85, 0, 1);
+}
+
+.numberCirclealt2 {
+  width: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  border: 4px solid grey;
+}
+
+.circle-text {
+  margin-top: 5px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.top-divider {
+  display: none;
+}
+
+.divider {
+  display: none;
+}
+
+.desktop-video-container {
+  display: none;
+}
+
+.desktop-main-container {
+  display: none;
+}
+
+.cards-container {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-product {
+  overflow: hidden;
+  height: 180px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+.card-product img {
+  height: 100%;
+  width: 125px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+.see-pictures-button {
+  margin: 0 auto;
+  background-color: #FF9702;
+  border: 3px solid #FF9702;
+  border-radius: 3px;
+  width: 40%;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.see-pictures-button a {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+
+.desktop-google-reviews {
+  display: none;
+}
+.mobile-google-reviews {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.community-service {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  color: grey;
+}
+
+.community-service p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.community-service img {
+  width: 100%;
+}
+
+.desktop-buttons {
+  display: none;
+}
+
+.phone-number {
+  display: none;
+}
+
+.hours {
+  display: none;
+}
+
+#desktop-support {
+  display: none;
+}
+
+.mobile-community-service {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: grey;
+}
+
+.community-service-image-mobile img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.mobile-community-service p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.mobile-facebook {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.desktop-facebook {
+  display: none;
+}

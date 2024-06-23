@@ -1,0 +1,154 @@
+.contact-form {
+  background: #FF9702;
+  padding: 50px 0px;
+  position: relative;
+}
+.form-header {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+}
+.form-header-lower {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.personal-info {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.personal-info-block {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.personal-info-block input {
+  width: 100%;
+  border: 2px solid black;
+  height: 50px;
+  outline: none;
+  padding-left: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.personal-info-block input::placeholder {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: visible;
+}
+.personal-info-block input:focus {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: visible;
+}
+
+.personal-info-block select {
+  width: 100%;
+  border: 2px solid black;
+  height: 50px;
+  outline: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  background: white;
+  padding-left: 10px;
+}
+.personal-info-block select::placeholder {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.personal-info-block select::focus {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.personal-info-block textarea {
+  width: 100%;
+  border: 2px solid black;
+  height: 80px;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.personal-info-block textarea::placeholder {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.personal-info-block textarea:focus {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  overflow: visible;
+}
+
+.personal-info-block label {
+  font-size: 20px;
+}
+
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.submit-btn button {
+  padding: 15px;
+  background: white;
+  color: black;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+
+  position: relative;
+  z-index: 2;
+}
+
+.submit-btn-bg {
+  background: black;
+  width: 117px;
+  height: 50px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-55%);
+}
+
+
+@media screen and (min-width: 800px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .personal-info-block input {
+    width: 100%;
+  }
+  .personal-info-block select {
+    width: 100% !important;
+  }
+  .personal-info-block textarea {
+    width: 100% !important;
+  }
+}
