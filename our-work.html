@@ -48,7 +48,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/flip-card.css">
   <link rel="stylesheet" href="styles/our-work.css">
-  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/scroll.css">
   <link rel="stylesheet" href="styles/responsiveness.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/facebook.css">
@@ -156,22 +156,25 @@
       <div class="button-group">
 
         <div class="smooth-scroll-button">
-          <a href="#section4">Luxury Vinyl Floorin</a>
+          <a href="#section2">Luxury Vinyl Floorin</a>
         </div>
 
         <div class="smooth-scroll-button">
-          <a href="#section5"> Laminate Flooring </a>
+          <a href="#section3"> Laminate Flooring </a>
         </div>
       </div>
       <div class="button-group">
         <div class="smooth-scroll-button">
-          <a href="#section2"> Cabinets</a>
+          <a href="#section4"> Engineered hardwood</a>
+        </div>
+        <div class="smooth-scroll-button">
+          <a href="#section5"> Cabinets</a>
         </div>
       </div>
     </div>
   </div>
 
-    <h4 id="section4">Luxury Vinyl Floorin</h4>
+    <h4 id="section2">Luxury Vinyl Floorin</h4>
     <div class="mobile-carousel-container">
       <div class="mobile-carousel-slide">
         <img src="images/vinil1.jpg" alt="picture of flooring de vinil">
@@ -203,7 +206,7 @@
 
     <br>
 
-    <h4 id="section5">Laminate Flooring</h4>
+    <h4 id="section3">Laminate Flooring</h4>
     <div class="mobile-carousel-container">
       <div class="mobile-carousel-slide">
         <img src="images/laminado.jpg" alt="picture of Laminate flooring">
@@ -236,7 +239,45 @@
 
     <br>
 
-    <h4 id="section2">Cabinets</h4>
+    <h4 id="section4">Engineered hardwood</h4>
+    <div class="mobile-carousel-container">
+      <div class="mobile-carousel-slide">
+        <img src="images/enginee2.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee3.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee4.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee5.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee6.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee8.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee9.jpg" alt="picture of Engineered hardwood">
+
+  
+        <style>
+          .image-link {
+              cursor: pointer; /* Cambiar el cursor a una mano al pasar por encima */
+          }
+      </style>
+      <img id="imagenEnlace7" class="image-link" src="images/click.jpg" alt="picture of flooring" style="width: 80%; height: 80%; display:block;margin:auto;">
+      <script>
+        // Obtenemos la referencia de la imagen por su ID
+        const imagenEnlace7 = document.getElementById('imagenEnlace7');
+        
+        // Agregamos un evento de clic a la imagen
+        imagenEnlace7.addEventListener('click', function() {
+            // Redirigimos a la URL deseada
+            window.location.href = 'enginee.html';
+        });
+    </script>
+
+       
+      </div>
+    </div>
+
+    <br>
+
+    
+
+
+    <h4 id="section5">Cabinets</h4>
     <div class="mobile-carousel-container">
       <div class="mobile-carousel-slide">
         <img src="images/gabinete.jpg" alt="cabinetes">
@@ -322,13 +363,13 @@
               cursor: pointer; /* Cambiar el cursor a una mano al pasar por encima */
           }
       </style>
-      <img id="imagenEnlace5" class="image-link" src="images/click.jpg" alt="picture of flooring" style="width: 25%; height: 30%; margin: auto;">
+      <img id="imagenEnlace9" class="image-link" src="images/click.jpg" alt="picture of flooring" style="width: 25%; height: 30%; margin: auto;">
       <script>
         // Obtenemos la referencia de la imagen por su ID
-        const imagenEnlace5 = document.getElementById('imagenEnlace5');
+        const imagenEnlace9 = document.getElementById('imagenEnlace9');
         
         // Agregamos un evento de clic a la imagen
-        imagenEnlace5.addEventListener('click', function() {
+        imagenEnlace9.addEventListener('click', function() {
             // Redirigimos a la URL deseada
             window.location.href = 'laminado.html';
         });
@@ -337,6 +378,40 @@
        
       </div>
     </div>
+
+    
+    <h4 id="section5">Engineered hardwood</h4>
+    <div class="mobile-carousel-container">
+      <div class="mobile-carousel-slide">
+        <img src="images/enginee2.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee3.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee4.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee5.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee6.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee8.jpg" alt="picture of Engineered hardwood">
+        <img src="images/enginee9.jpg" alt="picture of Engineered hardwood">
+       
+        <style>
+          .image-link {
+              cursor: pointer; /* Cambiar el cursor a una mano al pasar por encima */
+          }
+      </style>
+      <img id="imagenEnlace5" class="image-link" src="images/click.jpg" alt="picture of flooring" style="width: 25%; height: 30%; margin: auto;">
+      <script>
+        // Obtenemos la referencia de la imagen por su ID
+        const imagenEnlace5 = document.getElementById('imagenEnlace5');
+        
+        // Agregamos un evento de clic a la imagen
+        imagenEnlace5.addEventListener('click', function() {
+            // Redirigimos a la URL deseada
+            window.location.href = 'enginee.html';
+        });
+    </script>
+
+       
+      </div>
+    </div>
+
 
     <h4 id="section5">Cabinets</h4>
     <div class="mobile-carousel-container">

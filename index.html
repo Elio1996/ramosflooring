@@ -52,6 +52,8 @@
   <link rel="stylesheet" href="styles/responsiveness.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/facebook.css">
+  <link rel="stylesheet" href="styles/scroll.css">
+
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
@@ -336,6 +338,17 @@
     </div>
 
     <div class="card-product">
+      <img src="images/enginee2.jpg" alt="bathroom" />
+      <div class="card-product-infos">
+        <h2>Engineered hardwood</h2>
+          
+          <p>Transform your home with quality and affordability. Explore our options today!</p>
+          
+           </p>
+      </div>
+    </div>
+
+    <div class="card-product">
       <img src="images/gabinete.jpg" alt="cabinets" />
       <div class="card-product-infos">
         <h2>Cabinets</h2>
@@ -362,11 +375,15 @@
         </div>
 
         <div class="smooth-scroll-button">
-          <a href="#section3"> Laminate</a>
+          <a href="#section3"> Laminate Flooring</a>
         </div>
 
         <div class="smooth-scroll-button">
-          <a href="#section4"> Cabinets</a>
+          <a href="#section4"> Engineered hardwood</a>
+        </div>
+
+        <div class="smooth-scroll-button">
+          <a href="#section5"> Cabinets</a>
         </div>
 
       </div>
@@ -391,7 +408,7 @@
 
       <div class="container-block">
         <div class="block-item">
-          <h3 id="#section3">Laminate flooring</h3>
+          <h3 id="section3">Laminate flooring</h3>
           <img src="images/laminado2.jpg" alt="Laminate Flooring" data-aos="fade-right" data-aos-duration="2000">
         </div>
         <div class="block-item" data-aos="fade-left" data-aos-duration="2000">
@@ -402,7 +419,18 @@
 
       <div class="container-block">
         <div class="block-item">
-          <h3 id="section4">Cabinets</h3>
+          <h3 id="section4">Engineered hardwood</h3>
+          <img src="images/enginee3.jpg" alt="Engineered hardwood" data-aos="fade-right" data-aos-duration="2000">
+        </div>
+        <div class="block-item" data-aos="fade-left" data-aos-duration="2000">
+          <img id="image-right" src="images/enginee2.jpg" alt="Laminate Flooring">
+          <p>Transform your home with quality and affordability. Explore our options today!</p>
+        </div>
+      </div>
+
+      <div class="container-block">
+        <div class="block-item">
+          <h3 id="section5">Cabinets</h3>
           <img src="images/gabinete.jpg" alt="custom cabinets" data-aos="fade-right" data-aos-duration="2000">
         </div>
         <div class="block-item" data-aos="fade-left" data-aos-duration="2000">
@@ -415,10 +443,11 @@
     <a href="our-work.html"> See More Pictures > </a>
   </div>
 
+
     </div>
   </section>
-
   
+ 
 
  
   <!-- <section class="contact-form">
@@ -472,10 +501,41 @@
   </section>
 
   <br> -->
+  
+
 
 </main>
 
- <footer class="mobile-footer">
+<div id="reviews"></div>
+
+    <script>
+        async function fetchFacebookReviews() {
+            const pageId = 'https://www.facebook.com/rhfloorinstall/';
+            const accessToken = 'EAAe6xgi2s5cBO83qjdwn9M7ppL3yZBsZCwuz0nlv4jn02oLb5CpS9X3NGO2nr7BZBDZA61isW9qzjxgZAZA2Qb3m7hlW4Cw4rYLRBKqhuUASrwmLsYsdnMkyC7T6fWprfANRYlIMvDLOOQpPzvcFbUhAPNmJdnR183LpVhR2mhV4wiTv1iPD2COffZCZBCGwNsVd7A9rwXVWsL9bfJtr8oJVfJ8YmOD3KcWHcISna1mZChKZCurDRn6pZA9nKUktxRG3gZDZD';
+            const url = `https://graph.facebook.com/${pageId}/ratings?access_token=${accessToken}`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                const reviewsContainer = document.getElementById('reviews');
+                data.data.forEach(review => {
+                    const reviewElement = document.createElement('div');
+                    reviewElement.innerHTML = `
+                        <h3>${review.reviewer.name}</h3>
+                        <p>${review.review_text}</p>
+                        <p>Rating: ${review.rating}</p>
+                    `;
+                    reviewsContainer.appendChild(reviewElement);
+                });
+            } catch (error) {
+                console.error('Error fetching Facebook reviews:', error);
+            }
+        }
+
+        fetchFacebookReviews();
+    </script>
+<footer class="mobile-footer">
 
     <div class="">
       <h5>Ramos Flooring Contractor,LLC</h5>
