@@ -506,35 +506,13 @@
 
 </main>
 
-<div id="reviews"></div>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid032AsZcSiXtpjebUURmiPeFrD7Mp3L16Mm4wUZ9xig6V42gHu1SGwTVG3noNDDWnvjl%26id%3D100093232772970&show_text=true&width=500" width="500" height="734" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FKasseyWalker777%2Fposts%2Fpfbid0L7s9SiebyeQofaS9ZgWDAj1th2RhqsWTSydWQoj7wRrjvXaaSdDEvP3XiqbZLE6el&show_text=true&width=500" width="500" height="188" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjill.krefft%2Fposts%2Fpfbid0gVji9zPcnw74T6XLZy2wdA5Qk4YDjx8csH2qK6fBC4R5EYbcyYwTqeKWUXPcy8pfl&show_text=true&width=500" width="500" height="169" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdanielle.redmondjennings%2Fposts%2Fpfbid02mDxnufdYVn1xKQXVgGoyJc3UpBB62esYWf2m6T55dg4nXZ3x2coUGFT5Mg7QjSKHl&show_text=true&width=500" width="500" height="715" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-    <script>
-        async function fetchFacebookReviews() {
-            const pageId = 'https://www.facebook.com/rhfloorinstall/';
-            const accessToken = 'EAATBPKOV1b0BOxnPc8r0jbHEB636X62ZBQXpaQpYMJzhg2HBokh2QZBcr1KeyUPsfYxIkgVOlZBkGepec8Yv2EXquSg1z7cguHObWUJ423CJ3BKm3hIVcSdL21vIpk4Q0P30ZCXhlAVXtc8FgM5C53ooOTAVYbAqyvgTnSBoXoQH6GFdFtnsRzNDfQZDZD';
-            const url = `https://graph.facebook.com/${pageId}/ratings?access_token=${accessToken}`;
 
-            try {
-                const response = await fetch(url);
-                const data = await response.json();
 
-                const reviewsContainer = document.getElementById('reviews');
-                data.data.forEach(review => {
-                    const reviewElement = document.createElement('div');
-                    reviewElement.innerHTML = `
-                        <h3>${review.reviewer.name}</h3>
-                        <p>${review.review_text}</p>
-                        <p>Rating: ${review.rating}</p>
-                    `;
-                    reviewsContainer.appendChild(reviewElement);
-                });
-            } catch (error) {
-                console.error('Error fetching Facebook reviews:', error);
-            }
-        }
-
-        fetchFacebookReviews();
-    </script>
 <footer class="mobile-footer">
 
     <div class="">
